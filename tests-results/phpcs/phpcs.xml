@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="PHP_CodeSniffer 3.6.1" errors="0" tests="3" failures="0">
+<testsuite name="src/NearlyEquals.php" errors="0" tests="1" failures="0">
+ <testcase name="src/NearlyEquals.php"/>
+</testsuite>
+<testsuite name="src/FloatingPoint.php" errors="0" tests="1" failures="0">
+ <testcase name="src/FloatingPoint.php"/>
+</testsuite>
+<testsuite name="tests/NearlyEqualsTest.php" errors="0" tests="1" failures="0">
+ <testcase name="tests/NearlyEqualsTest.php"/>
+</testsuite>
+</testsuites>
+

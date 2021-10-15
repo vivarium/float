@@ -1,0 +1,40 @@
+Escaped mutants:
+================
+
+1) /home/luca/Workspace/vivarium/float/src/NearlyEquals.php:44    [M] LessThan
+
+--- Original
++++ New
+@@ @@
+         }
+         $diff = abs($first - $second);
+         if ($diff < $this->min) {
+-            return $diff < $epsilon * $this->min;
++            return $diff <= $epsilon * $this->min;
+         }
+         $first = abs($first);
+         $second = abs($second);
+
+
+2) /home/luca/Workspace/vivarium/float/src/NearlyEquals.php:50    [M] LessThan
+
+--- Original
++++ New
+@@ @@
+         }
+         $first = abs($first);
+         $second = abs($second);
+-        return $diff / min($first + $second, $this->max) < $epsilon;
++        return $diff / min($first + $second, $this->max) <= $epsilon;
+     }
+ }
+
+
+Timed Out mutants:
+==================
+
+Skipped mutants:
+================
+
+Not Covered mutants:
+====================
