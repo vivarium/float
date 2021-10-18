@@ -86,6 +86,7 @@ final class NearlyEqualsTest extends TestCase
     {
         $nearlyEquals = new NearlyEquals(0.00001);
 
+        static::assertFalse($nearlyEquals(2.1754943508223E-38, 1.1754943508223E-38));
         static::assertTrue($nearlyEquals(0.3, 0.30000003));
         static::assertTrue($nearlyEquals(-0.3, -0.30000003));
     }
