@@ -13,6 +13,9 @@ namespace Vivarium\Float;
 use function abs;
 use function min;
 
+/**
+ * @psalm-immutable
+ */
 final class NearlyEquals
 {
     private float $epsilon;
